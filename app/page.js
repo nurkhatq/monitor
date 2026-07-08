@@ -4,7 +4,8 @@ import { api } from '../lib/api';
 import StatCard     from '../components/StatCard';
 import PostCard     from '../components/PostCard';
 import PostModal    from '../components/PostModal';
-import MonitorPanel from '../components/MonitorPanel';
+import MonitorPanel  from '../components/MonitorPanel';
+import AccountsPanel from '../components/AccountsPanel';
 
 const STATUSES = ['', 'new', 'replied', 'ignored'];
 
@@ -99,6 +100,8 @@ export default function Dashboard() {
                 ))}
               </div>
             </div>
+
+            <AccountsPanel />
 
             {/* Status filter */}
             <div className="bg-gray-900 border border-gray-800 rounded-xl p-4">
